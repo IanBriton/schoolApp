@@ -1,0 +1,433 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: white;
+  width: 90vw;
+  margin: 0rem auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/* Set the width and height of the scrollbar track */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Style the appearance of the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+/* Style the appearance of the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.nav-bar h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.logo-img {
+  height: 8rem;
+  width: 12rem;
+  /* margin-left: 2rem; */
+}
+
+li {
+  list-style-type: none;
+}
+.nav-links {
+  margin: 3rem 1rem;
+}
+.nav-link {
+  display: inline;
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+.nav-link a {
+  text-decoration: none;
+  color: grey;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+.nav-link a:hover {
+  cursor: pointer;
+  color: crimson;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1.5) translateX(50px);
+}
+.section-one {
+  height: 90vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(211, 211, 211, 0.5),
+      rgba(50, 50, 50, 0.9)
+    ),
+    url("./images/group-g1d14b697f_1920.jpg");
+  /* filter: blur(5px); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto -4.7rem;
+}
+.info-img {
+  height: 50vh;
+  width: 40vw;
+  margin-right: 1.2rem;
+}
+.section-one-info {
+  margin: 5rem;
+}
+.section-one-info h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  font-size: 4rem;
+  color: rgb(230, 230, 230);
+  margin-bottom: 1rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.section-one-info p {
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  text-align: justify;
+  margin: rem auto;
+  /* text-align-last: center; */
+  color: rgb(12, 12, 12);
+  opacity: 0.8;
+}
+.signup-btn-info {
+  height: 4rem;
+  width: 10rem;
+  color: grey;
+  background: crimson;
+  border: none;
+  border-radius: 20px;
+  margin: 2rem auto;
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.signup-btn-info:hover {
+  cursor: pointer;
+  transform: scale(1.2) translateX(10px);
+  transition: all 0.5s ease-in-out;
+}
+.signup-btn-info a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.donate {
+  background: rgb(42, 149, 199);
+  color: white;
+  border-radius: 20px;
+}
+.donate a {
+  color: white;
+}
+.donate a:hover {
+  transform: scaleX(1.2) translateX(10px);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.section-two {
+  height: 70vh;
+  width: 90vw;
+}
+.section-two-info h1 {
+  text-align: center;
+  margin: 2rem;
+  padding: 1rem;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.section-two-info h1 > span {
+  height: 4rem;
+  width: 8rem;
+  color: crimson;
+  font-style: italic;
+}
+.section-two-info > p {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  opacity: 0.7;
+}
+.sch-funders {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+}
+.sch_funders {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 4rem;
+  padding: 1rem;
+}
+.sch_funders p {
+  text-align: center;
+  margin: 1.5rem auto;
+  font-weight: bold;
+  opacity: 0.7;
+}
+.section-three {
+  background: grey;
+  margin: 0rem -4.7rem;
+  height: 68vh;
+}
+.section-three-info h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 6rem 1.5rem;
+}
+.section-three-info h1 > span {
+  color: rgb(94, 214, 166);
+  color: linear-gradient(
+    90deg,
+    rgba(95, 237, 181, 1) 0%,
+    rgba(95, 237, 181, 1) 38%,
+    rgba(95, 237, 181, 1) 100%
+  );
+}
+.section-three-info p {
+  opacity: 0.7;
+  text-align: left;
+  margin-left: 1.5rem;
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+}
+
+.sch-img {
+  height: 30rem;
+  width: 25rem;
+  margin: 4rem 8rem 1rem 22rem;
+  z-index: 1;
+  position: relative;
+}
+.div-img::before {
+  content: "";
+  height: 30rem;
+  width: 25rem;
+  background: rgb(94, 214, 166);
+  display: block;
+  position: absolute;
+  top: 94rem;
+  left: 19rem;
+}
+.sch-milestones {
+  display: flex;
+}
+.section-three-info li {
+  list-style-type: square;
+  text-align: start;
+  margin-left: 1.8rem;
+  line-height: 1.5rem;
+  list-style-position: inside;
+  font-family: "Courier New", Courier, monospace;
+  opacity: 0.8;
+}
+.signup-info {
+  height: 4rem;
+  width: 10rem;
+  color: grey;
+  background: crimson;
+  border: none;
+  border-radius: 20px;
+  margin: 2rem auto;
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
+  display: block;
+  margin: 2rem auto;
+}
+.section-four {
+  height: 60vh;
+  width: 90vw;
+}
+.section-four h1 {
+  text-align: center;
+  margin: 2rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+  opacity: 0.8;
+  color: rgb(94, 214, 166);
+}
+.section-four h1 > span {
+  color: crimson;
+  font-style: italic;
+  font-size: 4rem;
+}
+.reviews {
+  display: flex;
+  justify-content: space-evenly;
+}
+.reviews p {
+  height: 20rem;
+  width: 15rem;
+  background: rgb(247, 246, 246);
+  padding: 1rem;
+  opacity: 0.8;
+  text-align: justify;
+  border-radius: 10px;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  position: relative;
+}
+.reviews p > span {
+  color: crimson;
+  text-transform: uppercase;
+  opacity: 1;
+  padding: 0.5rem;
+  position: absolute;
+  top: 17rem;
+  left: 1rem;
+}
+
+.footer {
+  background-color: black;
+  color: crimson;
+  margin: 0rem -4.7rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-links {
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+.social-links a {
+  margin: 0.8rem;
+  color: crimson;
+}
+.footer p {
+  color: grey;
+}
+form {
+  width: 360px;
+  margin: 6rem auto;
+  padding: 30px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: white;
+}
+input {
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  width: 100%;
+}
+label {
+  display: block;
+  margin: 20px 0 10px;
+}
+.auth-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.auth-img {
+  height: 100vh;
+  width: 60vw;
+  margin-right: -5rem;
+  float: right;
+}
+textarea {
+  height: 120px;
+}
+textarea {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.contact-us {
+  margin-top: 20px;
+  background: crimson;
+  color: white;
+  padding: 6px;
+  border: 0;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.contact-us-form {
+  margin-top: 0.4rem;
+}
+.error {
+  color: #ff0099;
+  margin: 10px 2px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.welcome-msg {
+  font-weight: lighter;
+}
+.welcome-msg span {
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.error-404 {
+  display: block;
+  width: 50vw;
+  margin: 16.8rem auto 20rem auto;
+}
+.error-404 h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.div-donate {
+  /* width: 50vw; */
+  display: inline-block;
+  flex-direction: column;
+  margin: 8.3rem 22rem;
+}
+.div-donate button {
+  border: none;
+  display: inline;
+  margin: 2.8rem 3rem;
+}
+.div-donate button > p {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.div-donate button:hover {
+  cursor: pointer;
+}
+.payment-logo {
+  height: 8rem;
+  width: 12rem;
+  margin: 1.5rem;
+}

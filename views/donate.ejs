@@ -1,0 +1,23 @@
+<%- include('partials/head.ejs'); %> <%- include('partials/header.ejs');%>
+<div class="div-donate">
+  <button class="btn btn-paypal" id="paypal-button-container">
+    <img src="/images/MPESA.jpeg" alt="" class="payment-logo" />
+    <p>Mpesa</p>
+  </button>
+  <button class="btn btn-mpesa">
+    <img src="/images/paypal.png" alt="" class="payment-logo" />
+    <p>PayPal</p>
+  </button>
+</div>
+<script>
+  const btnPaypal = document.querySelector(".btn-paypal");
+  const btnMpesa = document.querySelector(".btn-mpesa");
+
+  btnMpesa.addEventListener("click", (event) => {
+    console.log("Button mpesa clicked");
+  });
+  btnPaypal.addEventListener("click", (event) => {
+    console.log("Button paypal clicked");
+  });
+</script>
+<%- include('./partials/foooter.ejs'); %>
