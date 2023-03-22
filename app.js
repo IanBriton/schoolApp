@@ -3,6 +3,9 @@ const mongoose = require("mongoose");
 const authRoutes = require("./routes/authRoutes");
 const cookieParser = require("cookie-parser");
 const { requireAuth, checkUser } = require("./middleware/authMiddleware");
+const { db } = require("./model/User");
+require("dotenv").config();
+const fs = require("fs");
 
 const app = express();
 
@@ -11,11 +14,16 @@ app.use(express.static("public"));
 app.use(express.json());
 app.use(cookieParser());
 
+//Setting view Engine
 app.set("view engine", "ejs");
 
+//Reading the contents in the .env file
+// const dbUser = fs.readFileSync(process.env.DB_USER);
+// const dbPassword = fs.readFileSync(process.env.DB_PASSWORD);
+
 //Setting the database
-const dbURI =
-  "mongodb+srv://Dantez:123Dan45@cluster0.kfxupxp.mongodb.net/school";
+const dbURI = process.env.DB_URI;
+console.log(`dbURI: ${dbURI}`);
 mongoose
   .connect(dbURI, {
     useNewUrlParser: true,
