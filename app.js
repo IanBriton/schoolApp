@@ -23,7 +23,7 @@ app.set("view engine", "ejs");
 
 //Setting the database
 const dbURI = process.env.DB_URI;
-console.log(`dbURI: ${dbURI}`);
+// console.log(`dbURI: ${dbURI}`);
 mongoose
   .connect(dbURI, {
     useNewUrlParser: true,

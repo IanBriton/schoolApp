@@ -1,23 +1,34 @@
 <body>
   <header>
     <nav class="nav-bar">
-      <img src="./images//logo.jpeg" alt="" class="logo-img" />
+      <img src="./images/logo.jpeg" alt="" class="logo-img" />
+      <div class="menu-btn">
+        <span class="menu-btn__hamburger"></span>
+      </div>
       <!-- <h1>ESHIRAKALU PRIMARY SCHOOL</h1> -->
-      <ul class="nav-links">
-        <% if(user) { %>
-        <li class="nav-link welcome-msg">
-          Welcome, <span><%= user.name%></span>
-        </li>
-        <li class="nav-link"><a href="/">Home</a></li>
-        <li class="nav-link donate"><a href="/donate">Donate</a></li>
-        <li class="nav-link"><a href="/logout">Log Out</a></li>
-        <% }else{ %>
-        <li class="nav-link"><a href="/login">Login</a></li>
-        <li class="nav-link signup-btn-info">
-          <a href="/signup" class="signup-btn">Sign Up</a>
-        </li>
-        <% } %>
-      </ul>
+      <div class="nav">
+        <ul class="nav-links">
+          <% if(user) { %>
+          <li class="nav-link welcome-msg">
+            Welcome, <span><%= user.name%></span>
+          </li>
+          <li class="nav-link"><a href="/" class="menu-nav__link">Home</a></li>
+          <li class="nav-link donate">
+            <a href="/donate" class="menu-nav__link">Donate</a>
+          </li>
+          <li class="nav-link">
+            <a href="/logout" class="menu-nav__link">Log Out</a>
+          </li>
+          <% }else{ %>
+          <li class="nav-link">
+            <a href="/login" class="menu-nav__link">Login</a>
+          </li>
+          <li class="nav-link signup-btn-info">
+            <a href="/signup" class="signup-btn menu-nav__link">Sign Up</a>
+          </li>
+          <% } %>
+        </ul>
+      </div>
     </nav>
   </header>
 </body>
