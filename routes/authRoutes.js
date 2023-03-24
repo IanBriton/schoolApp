@@ -9,5 +9,6 @@ route.get("/signup", authControllers.signup_get);
 route.post("/signup", authControllers.signup_post);
 route.post("/login", authControllers.login_post);
 route.get("/logout", authControllers.logout_get);
+route.get("/donate/pay", authControllers.donate_pay);
 
 module.exports = route;
